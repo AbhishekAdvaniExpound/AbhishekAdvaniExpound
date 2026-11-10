@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Abhishek Advani — enterprise engineering portfolio</title><desc id="desc">SAP Technical Lead, SAP BTP Engineer, Full-Stack Developer and emerging Solution Architect.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e1d31"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs><style>
+      text{font-family:Inter,Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+      .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+      .title{fill:#f3f8ff;font-weight:650;letter-spacing:-.02em}
+      .body{fill:#91a4bd}.label{fill:#22d3ee;font-weight:650;letter-spacing:.13em}
+      .chip{fill:#f3f8ff;font-size:15px}.hair{stroke:#20344d;stroke-width:1}
+      
+      .reveal{opacity:0;transform:translateY(10px);animation:rise .65s cubic-bezier(.2,.75,.25,1) forwards}
+      .pulse{animation:pulse 4s ease-in-out infinite}.dash{animation:dash 8s linear infinite}
+      @keyframes rise{to{opacity:1;transform:translateY(0)}}
+      @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.85}}
+      @keyframes dash{to{stroke-dashoffset:-80}}
+    
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+    </style>
+  <rect width="1200" height="360" rx="22" fill="url(#panel)"/>
+  <rect x=".5" y=".5" width="1199" height="359" rx="21.5" fill="none" stroke="#20344d"/>
+  
+    <defs><linearGradient id="heroText" x1="0" y1="0" x2="1" y2="0" gradientTransform="translate(-1 0)"><stop stop-color="#f3f8ff"/><stop offset=".48" stop-color="#f3f8ff"/><stop offset=".55" stop-color="#22d3ee"/><stop offset=".62" stop-color="#f3f8ff"/><animate attributeName="gradientTransform" values="translate(-1 0);translate(1 0);translate(-1 0)" dur="8s" repeatCount="indefinite"/></linearGradient></defs>
+    <path d="M 40 0 V 360" class="hair" opacity=".16"/><path d="M 120 0 V 360" class="hair" opacity=".16"/><path d="M 200 0 V 360" class="hair" opacity=".16"/><path d="M 280 0 V 360" class="hair" opacity=".16"/><path d="M 360 0 V 360" class="hair" opacity=".16"/><path d="M 440 0 V 360" class="hair" opacity=".16"/><path d="M 520 0 V 360" class="hair" opacity=".16"/><path d="M 600 0 V 360" class="hair" opacity=".16"/><path d="M 680 0 V 360" class="hair" opacity=".16"/><path d="M 760 0 V 360" class="hair" opacity=".16"/><path d="M 840 0 V 360" class="hair" opacity=".16"/><path d="M 920 0 V 360" class="hair" opacity=".16"/><path d="M 1000 0 V 360" class="hair" opacity=".16"/><path d="M 1080 0 V 360" class="hair" opacity=".16"/><path d="M 1160 0 V 360" class="hair" opacity=".16"/><path d="M 0 40 H 1200" class="hair" opacity=".16"/><path d="M 0 120 H 1200" class="hair" opacity=".16"/><path d="M 0 200 H 1200" class="hair" opacity=".16"/><path d="M 0 280 H 1200" class="hair" opacity=".16"/><circle cx="1050" cy="75" r="180" fill="#3b82f6" opacity=".08" filter="url(#glow)"/>
+    <path d="M920 70a150 150 0 1 0 210 214" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 14" opacity=".45" class="dash"/>
+    <g class="reveal" style="animation-delay:0.00s"><rect x="54" y="45" width="10" height="10" rx="3" fill="#22d3ee"/><text x="78" y="55" class="label mono" font-size="14">ENGINEERING / ENTERPRISE / CLOUD</text></g>
+    <text x="54" y="124" class="title reveal" style="animation-delay:0.09s" font-size="48" fill="url(#heroText)">Abhishek Advani</text>
+    <text x="54" y="181" class="title reveal" style="animation-delay:0.18s" font-size="37">Building Enterprise Applications That Scale.</text>
+    <text x="56" y="226" class="body reveal" style="animation-delay:0.27s" font-size="19">SAP Technical Lead · SAP BTP Engineer · Full-Stack Developer · Emerging Solution Architect</text>
+    <g class="reveal" style="animation-delay:0.36s"><g><rect x="54" y="267" width="150" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="69" y="289" class="chip mono">SAP BTP + CAP</text></g><g><rect x="216" y="267" width="174" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="231" y="289" class="chip mono">ABAP RAP + Fiori</text></g><g><rect x="402" y="267" width="154" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="417" y="289" class="chip mono">React + Node.js</text></g><g><rect x="568" y="267" width="176" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="583" y="289" class="chip mono">Cloud Architecture</text></g></g>
+    <g transform="translate(1012 160)"><circle r="52" fill="none" stroke="#20344d"/><circle r="29" fill="none" stroke="#3b82f6" opacity=".65"/><circle r="7" fill="#22d3ee" class="pulse"/><path d="M-72 0H72M0-72V72" stroke="#20344d" opacity=".7"/></g>
+    
+</svg>

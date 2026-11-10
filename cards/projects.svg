@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="570" viewBox="0 0 1200 570" role="img" aria-labelledby="title desc">
+  <title id="title">Selected engineering systems</title><desc id="desc">Sanitized project themes with no confidential client details or source links.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e1d31"/><stop offset="1" stop-color="#07111f"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#3b82f6"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs><style>
+      text{font-family:Inter,Geist,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+      .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+      .title{fill:#f3f8ff;font-weight:650;letter-spacing:-.02em}
+      .body{fill:#91a4bd}.label{fill:#22d3ee;font-weight:650;letter-spacing:.13em}
+      .chip{fill:#f3f8ff;font-size:15px}.hair{stroke:#20344d;stroke-width:1}
+      
+      .reveal{opacity:0;transform:translateY(10px);animation:rise .65s cubic-bezier(.2,.75,.25,1) forwards}
+      .pulse{animation:pulse 4s ease-in-out infinite}.dash{animation:dash 8s linear infinite}
+      @keyframes rise{to{opacity:1;transform:translateY(0)}}
+      @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.85}}
+      @keyframes dash{to{stroke-dashoffset:-80}}
+    
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+    </style>
+  <rect width="1200" height="570" rx="22" fill="url(#panel)"/>
+  <rect x=".5" y=".5" width="1199" height="569" rx="21.5" fill="none" stroke="#20344d"/>
+  <text x="50" y="48" class="title reveal" style="animation-delay:0.00s" font-size="28">Selected engineering systems</text><text x="1150" y="48" text-anchor="end" class="body mono" font-size="12">SANITIZED PORTFOLIO THEMES · NO CLIENT DATA</text><g class="reveal" style="animation-delay:0.09s"><rect x="48" y="72" width="1104" height="94" rx="14" fill="#0e1d31" stroke="#20344d"/><text x="74" y="102" class="label mono" font-size="11">SAP / FIORI</text><text x="74" y="135" class="title" font-size="23">SAP Fiori Point of Sale</text><text x="455" y="134" class="body" font-size="16">Material catalog · pricing · stock availability · sales order integration</text><path d="M1122 117l8 8-8 8" fill="none" stroke="#22d3ee" stroke-width="2"/></g><g class="reveal" style="animation-delay:0.18s"><rect x="48" y="190" width="1104" height="94" rx="14" fill="#0e1d31" stroke="#20344d"/><text x="74" y="220" class="label mono" font-size="11">DOCUMENT AUTOMATION</text><text x="74" y="253" class="title" font-size="23">Enterprise Label Printing</text><text x="455" y="252" class="body" font-size="16">SAP document APIs · QR labels · PDF generation · bulk printing</text><path d="M1122 235l8 8-8 8" fill="none" stroke="#22d3ee" stroke-width="2"/></g><g class="reveal" style="animation-delay:0.27s"><rect x="48" y="308" width="1104" height="94" rx="14" fill="#0e1d31" stroke="#20344d"/><text x="74" y="338" class="label mono" font-size="11">ANALYTICS</text><text x="74" y="371" class="title" font-size="23">SAP Procurement KPI Dashboards</text><text x="455" y="370" class="body" font-size="16">Procurement analytics · performance indicators · quality monitoring</text><path d="M1122 353l8 8-8 8" fill="none" stroke="#22d3ee" stroke-width="2"/></g><g class="reveal" style="animation-delay:0.36s"><rect x="48" y="426" width="1104" height="94" rx="14" fill="#0e1d31" stroke="#20344d"/><text x="74" y="456" class="label mono" font-size="11">CLOUD ARCHITECTURE</text><text x="74" y="489" class="title" font-size="23">Multi-Tenant SaaS</text><text x="455" y="488" class="body" font-size="16">React and Node.js architecture · tenant-aware backend services</text><path d="M1122 471l8 8-8 8" fill="none" stroke="#22d3ee" stroke-width="2"/></g>
+</svg>
