@@ -17,7 +17,7 @@
       @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.85}}
       @keyframes dash{to{stroke-dashoffset:-80}}
     
-      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal,.cell{opacity:1!important;transform:none!important}.bar,.best{transform:none!important}}
     </style>
   <rect width="1200" height="200" rx="22" fill="url(#panel)"/>
   <rect x=".5" y=".5" width="1199" height="199" rx="21.5" fill="none" stroke="#20344d"/>

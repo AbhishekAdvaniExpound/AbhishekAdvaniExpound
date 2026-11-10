@@ -44,7 +44,7 @@ def style(extra: str = "") -> str:
       .body{{fill:{C['muted']}}}.label{{fill:{C['cyan']};font-weight:650;letter-spacing:.13em}}
       .chip{{fill:{C['text']};font-size:15px}}.hair{{stroke:{C['line']};stroke-width:1}}
       {animation}{extra}
-      @media (prefers-reduced-motion:reduce){{*{{animation:none!important}}.reveal{{opacity:1!important;transform:none!important}}}}
+      @media (prefers-reduced-motion:reduce){{*{{animation:none!important}}.reveal,.cell{{opacity:1!important;transform:none!important}}.bar,.best{{transform:none!important}}}}
     </style>"""
 
 
@@ -82,8 +82,8 @@ def hero() -> str:
     <path d="M920 70a150 150 0 1 0 210 214" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 14" opacity=".45" class="dash"/>
     <g class="reveal"{delay(0)}><rect x="54" y="45" width="10" height="10" rx="3" fill="{C['cyan']}"/><text x="78" y="55" class="label mono" font-size="14">ENGINEERING / ENTERPRISE / CLOUD</text></g>
     <text x="54" y="124" class="title reveal"{delay(1)} font-size="48" fill="url(#heroText)">Abhishek Advani</text>
-    <text x="54" y="181" class="title reveal"{delay(2)} font-size="37">Building Enterprise Applications That Scale.</text>
-    <text x="56" y="226" class="body reveal"{delay(3)} font-size="19">SAP Technical Lead · SAP BTP Engineer · Full-Stack Developer · Emerging Solution Architect</text>
+    <text x="54" y="181" class="title reveal"{delay(2)} font-size="34">Building Enterprise Applications That Scale.</text>
+    <text x="56" y="226" class="body reveal"{delay(3)} font-size="17">SAP Technical Lead · SAP BTP Engineer · Full-Stack Developer · Emerging Solution Architect</text>
     <g class="reveal"{delay(4)}>{chip(54, 267, 'SAP BTP + CAP', 150)}{chip(216, 267, 'ABAP RAP + Fiori', 174)}{chip(402, 267, 'React + Node.js', 154)}{chip(568, 267, 'Cloud Architecture', 176)}</g>
     <g transform="translate(1012 160)"><circle r="52" fill="none" stroke="{C['line']}"/><circle r="29" fill="none" stroke="{C['blue']}" opacity=".65"/><circle r="7" fill="{C['cyan']}" class="pulse"/><path d="M-72 0H72M0-72V72" stroke="{C['line']}" opacity=".7"/></g>
     """
@@ -158,7 +158,7 @@ def heatmap_card(data: dict[str, Any]) -> str:
       <text x="50" y="210" class="title" font-size="25">{s['active_days']}</text><text x="50" y="231" class="body" font-size="13">active days</text>
       <text x="50" y="266" class="title" font-size="25">{s['longest_streak']}</text><text x="50" y="287" class="body" font-size="13">longest streak</text>
       {''.join(month_labels)}{''.join(cells)}
-      <text x="186" y="258" class="body mono" font-size="11">MON</text><text x="186" y="276" class="body mono" font-size="11">WED</text><text x="186" y="294" class="body mono" font-size="11">FRI</text>
+      <text x="150" y="145" class="body mono" font-size="10">MON</text><text x="150" y="179" class="body mono" font-size="10">WED</text><text x="150" y="213" class="body mono" font-size="10">FRI</text>
       <g transform="translate(1046 274)"><text x="0" y="10" class="body mono" font-size="10">LESS</text>{''.join(f'<rect x="{36 + i*18}" width="12" height="12" rx="3" fill="{color}"/>' for i,color in enumerate(colors))}</g>
     """
     return svg_shell("Verified GitHub contribution heatmap", 1200, 320, body, extra_style=extra, desc=f"{s['total']} public contributions across the displayed rolling year.")
@@ -191,7 +191,7 @@ def projects_card() -> str:
     rows = []
     for i, (name, details, domain) in enumerate(projects):
         y = 102 + i * 118
-        rows.append(f"""<g class="reveal"{delay(i + 1)}><rect x="48" y="{y-30}" width="1104" height="94" rx="14" fill="{C['panel2']}" stroke="{C['line']}"/><text x="74" y="{y}" class="label mono" font-size="11">{domain}</text><text x="74" y="{y+33}" class="title" font-size="23">{esc(name)}</text><text x="455" y="{y+32}" class="body" font-size="16">{esc(details)}</text><path d="M1122 {y+15}l8 8-8 8" fill="none" stroke="{C['cyan']}" stroke-width="2"/></g>""")
+        rows.append(f"""<g class="reveal"{delay(i + 1)}><rect x="48" y="{y-30}" width="1104" height="94" rx="14" fill="{C['panel2']}" stroke="{C['line']}"/><text x="74" y="{y}" class="label mono" font-size="11">{domain}</text><text x="74" y="{y+33}" class="title" font-size="22">{esc(name)}</text><text x="455" y="{y+32}" class="body" font-size="14">{esc(details)}</text><path d="M1122 {y+15}l8 8-8 8" fill="none" stroke="{C['cyan']}" stroke-width="2"/></g>""")
     body = f'<text x="50" y="48" class="title reveal"{delay(0)} font-size="28">Selected engineering systems</text><text x="1150" y="48" text-anchor="end" class="body mono" font-size="12">SANITIZED PORTFOLIO THEMES · NO CLIENT DATA</text>{"".join(rows)}'
     return svg_shell("Selected engineering systems", 1200, 570, body, desc="Sanitized project themes with no confidential client details or source links.")
 

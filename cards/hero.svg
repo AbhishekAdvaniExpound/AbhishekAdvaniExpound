@@ -17,7 +17,7 @@
       @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.85}}
       @keyframes dash{to{stroke-dashoffset:-80}}
     
-      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal{opacity:1!important;transform:none!important}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important}.reveal,.cell{opacity:1!important;transform:none!important}.bar,.best{transform:none!important}}
     </style>
   <rect width="1200" height="360" rx="22" fill="url(#panel)"/>
   <rect x=".5" y=".5" width="1199" height="359" rx="21.5" fill="none" stroke="#20344d"/>
@@ -27,8 +27,8 @@
     <path d="M920 70a150 150 0 1 0 210 214" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 14" opacity=".45" class="dash"/>
     <g class="reveal" style="animation-delay:0.00s"><rect x="54" y="45" width="10" height="10" rx="3" fill="#22d3ee"/><text x="78" y="55" class="label mono" font-size="14">ENGINEERING / ENTERPRISE / CLOUD</text></g>
     <text x="54" y="124" class="title reveal" style="animation-delay:0.09s" font-size="48" fill="url(#heroText)">Abhishek Advani</text>
-    <text x="54" y="181" class="title reveal" style="animation-delay:0.18s" font-size="37">Building Enterprise Applications That Scale.</text>
-    <text x="56" y="226" class="body reveal" style="animation-delay:0.27s" font-size="19">SAP Technical Lead · SAP BTP Engineer · Full-Stack Developer · Emerging Solution Architect</text>
+    <text x="54" y="181" class="title reveal" style="animation-delay:0.18s" font-size="34">Building Enterprise Applications That Scale.</text>
+    <text x="56" y="226" class="body reveal" style="animation-delay:0.27s" font-size="17">SAP Technical Lead · SAP BTP Engineer · Full-Stack Developer · Emerging Solution Architect</text>
     <g class="reveal" style="animation-delay:0.36s"><g><rect x="54" y="267" width="150" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="69" y="289" class="chip mono">SAP BTP + CAP</text></g><g><rect x="216" y="267" width="174" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="231" y="289" class="chip mono">ABAP RAP + Fiori</text></g><g><rect x="402" y="267" width="154" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="417" y="289" class="chip mono">React + Node.js</text></g><g><rect x="568" y="267" width="176" height="34" rx="17" fill="#12243a" stroke="#20344d"/><text x="583" y="289" class="chip mono">Cloud Architecture</text></g></g>
     <g transform="translate(1012 160)"><circle r="52" fill="none" stroke="#20344d"/><circle r="29" fill="none" stroke="#3b82f6" opacity=".65"/><circle r="7" fill="#22d3ee" class="pulse"/><path d="M-72 0H72M0-72V72" stroke="#20344d" opacity=".7"/></g>
     
